@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <div class="container">
+            <div class="intro">
+                <h1 id="title">Interested in what sport suits you?</h1>
+                <p id="description">Take our survey form and we'll give it our best<br> to help you choose which sport trully suits you!</p>
+            </div>
+            <div class="main">
+                <form id="survey-form">
+                    <div class="element">
+                        <div class="prim">
+                            <label for="fname" id="name-label">Name</label><br>
+                            <input type="text" id="name" placeholder="Enter your name" name="fname" required="" class="input"><br>
+                        </div>
+                        <div class="prim">
+                            <label for="lname">Surname</label><br>
+                            <input type="text" placeholder="Enter your surname" name="lname" required="" class="input"><br>
+                        </div>
+                        <div class="prim">
+                            <label for="age"  id="number-label">Age</label><br>
+                            <input type="number" min="1" max="2" id="number" name="age" required="" placeholder="Age" class="input"><br>
+                        </div>
+                        <div class="prim">
+                            <label for="email" id="email-label">Email</label><br>
+                            <input type="email" id="email" placeholder="Enter your emali" name="email" required="" class="input"><br>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <p class="p">What are your strenghts?</p>
+                        <input type="checkbox" id="c1" name="fast" value="speed">
+                        <label for="fast">I am fast as a cobra</label><br>
+                        <input type="checkbox" id="c2" name="agile" value="agility">
+                        <label for="agile">I'm agile as a leopard</label><br>
+                        <input type="checkbox" id="c3" name="flex" value="flexibility">
+                        <label for="flex">I'm as flexible as a weasel</label><br>
+                        <input type="checkbox" id="c4" name="acc" value="accuracy">
+                        <label for="acc">I'm as accurate as a an eagle</label><br>
+                        <input type="checkbox" id="c5" name="bala" value="balance">
+                        <label for="bala">I have balance of a cat</label>
+                    </div>
+                    <div class="element">
+                        <p class="p">What are you:</p>
+                        <input type="radio" id="r1" name="rb" value="teampl">
+                        <label for="r1">A team player</label><br>
+                        <input type="radio" id="r2" name="rb" value="solopl">
+                        <label for="r2">Solo expert</label><br>
+                        <input type="radio" id="r3" name="rb" value="mixpl">
+                        <label for="r3">I can do both</label><br>
+                    </div>
+                    <div class="element">
+                        <label for="time">When was the last time you broke a sweat?</label><br>
+                        <select name="time" id="dropdown">
+                            <option value="" selected disabled hidden>Choose one...</option>
+                            <option value="one">A long time ago... In primary school!</option>
+                            <option value="two">High school, I think? There was still time then for extracurriculars</option>
+                            <option value="three">College. I was in sport section</option>
+                            <option value="four">This week offcourse. I train regularly</option>
+                        </select>
+                    </div>
+                    <div class="element">
+                        <label for="injuries">Do you have any past injuries?<br>It is an important factor:</label><br>
+                        <textarea name="injuries" id="injuries" placeholder="Tell us..."></textarea>
+                    </div>
+                    <div class="element">
+                        <input type="submit" id="submit" value="Submit">
+                    </div>
+                </form>
+    
+            </div>
+    </div>
+    <script src="second.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Fresca&display=swap');
+:root {
+    box-sizing: border-box;
+    font-family: 'Fresca', sans-serif;
+    color: white;
+}
+body {
+    margin: 0;
+}
+.container {
+    width: 750px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.intro {
+    margin: 50px 90px;
+    padding: 20px;
+    background-color: rgba(25, 0, 51, 0.8);
+}
+.main {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 20px;
+    padding: 20px 220px;
+    text-align: left;
+    background-color: rgba(25, 0, 51, 0.7);
+    
+}
+.element {
+    padding: 20px 0;
+    line-height: 1.6;
+}
+.p {
+    margin: 0;
+}
+#injuries {
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+.prim {
+    padding: 10px 0;
+}
+#dropdown {
+    width: 200px;
+}
+html {
+    background-image: url(https://thenumberlies.com/wp-content/uploads/2020/06/iStock-949190756.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+    .main {
+        width: 200px;
+        padding-left: 60px;
+    }
+}
